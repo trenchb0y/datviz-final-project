@@ -1,11 +1,10 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
 
 st.set_page_config(
-    page_title="Video Game Sales Dashboard",
-    page_icon="🎮",
+    page_title="Video Game Sales Dashboard - 1301213359",
+    page_icon="📊",
     layout="wide"
 )
 
@@ -49,7 +48,7 @@ load_css('style.css')
 
 df = load_data()
 
-st.title("🎮 Video Game Sales Analysis Dashboard")
+st.title("🎮📊 Video Game Sales Analysis Dashboard")
 st.write("Open the sidebar on the left 👈 for an addtional control on the data")
 
 st.sidebar.header("Filters")
@@ -175,3 +174,5 @@ if not filtered_df.empty:
     st.dataframe(filtered_df)
 else:
     st.info("No data available for the selected filters")
+
+st.write("Made with 🫀 by yours truly -zharfan.")
